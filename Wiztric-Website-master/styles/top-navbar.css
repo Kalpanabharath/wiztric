@@ -1,0 +1,111 @@
+.navbar {
+  position: sticky !important;
+  top: 0 !important;
+  left: 0 !important;
+}
+
+.logo-text {
+  background-image: linear-gradient(90deg, #1ab394, #1d364e);
+  color: transparent;
+  background-clip: text;
+}
+
+.navbar-toggler {
+  border: none;
+  background: none;
+  font-size: 24px;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.navbar-nav {
+  display: flex;
+  gap: 20px;
+}
+
+.navbar-nav .nav-link {
+  color: #1d364e;
+  padding-bottom: 5px;
+  transition: all 0.3s ease;
+  border-bottom: 2px solid transparent;
+  font-weight: 600;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #1ab394;
+  border-bottom: 4px solid #1d364e;
+}
+
+.navbar-nav .nav-link.active {
+  color: #1ab394 !important;
+  border-bottom: 4px solid #1d364e !important;
+}
+
+.logo-image {
+  width: 100px;
+  height: auto;
+}
+
+/* Mega Menu */
+.mega-menu {
+  width: 400px;
+  margin-top: 4px;
+  background-color: white;
+  border-radius: 8px;
+  display: none; /* Hide by default */
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.mega-menu .dropdown-header {
+  font-size: 14px;
+  font-weight: bold;
+  color: #888;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+.mega-menu .dropdown-item {
+  padding: 5px;
+  font-size: 16px;
+  color: black;
+}
+
+.mega-menu .dropdown-item:hover {
+  background-color: #f8f9fa;
+  color: green;
+}
+
+/* Mega menu hover & positioning fix */
+.nav-item.dropdown:hover .mega-menu {
+  display: block;
+}
+/* #productDropdown::after {
+  display: none !important;
+} */
+
+/* Ensure mega menu closes on mobile */
+@media screen and (max-width: 989px) {
+  .mega-menu {
+    width: 100%;
+    position: static;
+    box-shadow: none !important;
+  }
+  .navbar-nav .nav-item:hover .mega-menu {
+    margin-top: 0px;
+  }
+  .dropdown-menu {
+    left: 0 !important;
+    right: auto !important;
+  }
+  #productDropdown::after {
+    display: inline-block !important;
+  }
+}
+
+/* Remove dropdown arrow */

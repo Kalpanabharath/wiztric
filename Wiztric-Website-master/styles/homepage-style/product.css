@@ -1,0 +1,232 @@
+/* product section start */
+.product{
+  background-color: rgb(242, 247, 252);
+  margin-top: 50px;
+}
+.product-head{
+  font-family: Figtree, sans-serif;
+  color: darkgreen;
+  font-size: 16px;
+}
+
+.product .nav-pills .nav-item {
+    /* border-right: 1px solid #ccc; */
+    padding-left: 0.5vw;
+    padding-right: 0.5vw;
+    overflow-x: hidden;
+   
+  }
+  .product .nav-pills li:not(:last-child){
+    border-right: 1px solid #ccc;
+  }
+  
+  .product .nav-pills .nav-link {
+    color: #1d364e !important;
+    font-size: 1rem;
+    
+    font-weight: 400 !important;
+  }
+  
+  .product .nav-pills .nav-link.active {
+    color: #1ab394 !important;
+    background-color: transparent !important;
+  
+  }
+  
+  .nav-pills .nav-link.active {
+    background-color: transparent !important;
+  }
+  .product .tab-content{
+    transition: all 0.4s ease-in-out;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  
+  
+  /* ubdated page ubdated start */
+  /* ubdated page ubdated end */
+  
+  /* card */
+  
+  .blog-card {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .blog-card img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .date-badge {
+    position: absolute;
+    bottom: 0px;
+    left: 10px;
+    background: #002147;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+    z-index: 10;
+  }
+  
+  .date-badge span {
+    display: block;
+    font-size: 14px;
+  }
+  
+  .date-badge small {
+    font-size: 12px;
+  }
+  
+  .blog-content {
+    padding: 20px;
+    background: #fff;
+  }
+  
+  .blog-title {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .blog-meta {
+    font-size: 14px;
+    color: #6c757d;
+    border-top: 1px solid #6c757d;
+    border-bottom: 1px solid #6c757d;
+    padding: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .blog-meta i {
+    color: var(--light-green);
+    margin-right: 5px;
+  }
+  
+  .blog-text {
+    font-size: 14px;
+    color: #6c757d;
+    margin-top: 10px;
+  }
+  
+  .read-more {
+    display: inline-block;
+    /* margin-top: 10px; */
+    color: green;
+    font-weight: 300px;
+    text-decoration: none;
+    font-size: min(14px, 4vw) !important;
+  }
+  
+  .read-more:hover {
+    text-decoration: underline;
+  }
+  
+  .card,
+  .card-img {
+    border-radius: 0 !important;
+  }
+  
+  .card-img {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  
+    transition: transform 1s ease-in-out;
+    /* Smooth scaling transition */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+  }
+  
+  .image-container {
+    transition: all 5s ease-in-out;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    /* This ensures only the image is clipped */
+    /* padding-bottom: 27px; */
+    /* overflow: hidden; */
+  }
+  
+  .pluse {
+    background-color: hsla(120, 100%, 50%, 0.4);
+    color: white;
+    font-size: clamp(20px, 2vw, 30px);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -54%);
+    opacity: 0;
+    height: 5%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: height 1.5s ease-in-out, opacity 1s ease-in-out;
+  }
+  
+  .image-container:hover .pluse {
+    opacity: 1;
+    height: 100%;
+  }
+  
+  .image-container:hover .card-img {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.1);
+  }
+  
+  @media screen and (min-width: 768px) {
+    .product .nav-pills .nav-link {
+      font-size: 1.25rem !important;
+    }
+   
+  }
+
+  @media screen and (max-width:768px){
+    .product{
+      margin-top: 0px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .product .form-select{
+      width: 70%;
+      margin-top: 5px;
+    }
+    .form-select {
+      position: relative;
+  }
+  
+  .form-select:focus {
+      z-index: 1050; /* Ensures it appears above other elements */
+  }
+  
+  .form-select option {
+      direction: ltr;
+  }
+  .form-select:focus, 
+  .form-select:active {
+    box-shadow: none !important;  /* Removes the glow effect */
+    outline: none !important;      /* Removes the default focus outline */
+    border-color: #ccc !important; /* Keeps border color neutral */
+    background-color: var(--bs-body-bg) !important; /* Prevents unwanted color change */
+}
+.center-container{
+  width: 100%;
+}
+.product .nav-pills .nav-item{
+  width: 50%;
+  border: none;
+}
+
+  }
+
+  
+  /* product section end */

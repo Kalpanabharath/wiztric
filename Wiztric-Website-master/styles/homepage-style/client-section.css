@@ -1,0 +1,169 @@
+@import url(../../styles/global.css);
+
+.client-section {
+    font-family: Figtree, sans-serif;
+  
+    overflow-x: hidden;
+   
+  }
+  .client-section .client-logo-image-container img {
+    width: 125px;
+    height: 72px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .client-contact {
+    font-size: (14px,1vw,25px);
+    color: black;
+    margin-top: 10px;
+  }
+  .client-para-container {
+    width: 80%;
+ }
+  .client-logo-image-container {
+    display: inline-block;
+  }
+  .our-client-heading {
+    font-size: clamp(1rem, 2vw, 2.5rem);
+    font-weight: 700;
+  }
+
+  .our-client-para {
+    font-size: 16px;
+    color: #6c757d;
+    margin: 0;
+  }
+  .client-logo-image {
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    object-fit: contain;
+    transition: transform 0.3s ease-in-out;
+  }
+  .client-logo-image:hover {
+    transform: scale(1.2);
+    z-index: 200;
+  }
+  .client-section-container>div {
+    width: 80%;
+    
+    height: fit-content;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .call-icon{
+    width: 25px;
+    height: auto;
+  }
+
+  .client-card {
+    width: 400px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    position: relative;
+    border-left: 8px solid #1ab394;
+    opacity: 1 !important;
+    visibility: visible !important;
+  }
+  .client-card .date-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 10px;
+    color: #555;
+  }
+  .client-card .date-price i {
+    color: green;
+    margin-right: 5px;
+  }
+  .client-card .price {
+    font-size: 26px;
+    font-weight: bold;
+    color: #1d364e;
+  }
+  .client-card .title {
+    font-size: 15px;
+    font-weight: bold;
+  }
+  .client-card span {
+    font-size: 10px;
+  }
+  .client-card .user {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .client-card .user img {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  .client-card .location {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #555;
+  }
+  .client-card .location i {
+    color: green;
+    margin-right: 5px;
+  }
+  /* client section ubdate start */
+
+
+.client-icon-img{
+  width: 80px;
+  height: 80px;
+}
+
+.count{
+  color: #1ab394;
+  font-size: clamp(1rem,2vw,2rem);
+  font-weight: 700;
+
+}
+.count-name{
+color: #1d364e;
+font-size: clamp(16px,1vw,2rem);
+font-weight: 600;
+}
+.swiper {
+  /* width: 80%; */
+  width: 100%;
+}
+
+
+/* client section ubdate end */
+ 
+
+@media screen and (max-width:769px){
+  
+  .client-card{
+    padding: 5px;
+    gap: 0px;
+    border-left: 4px solid #1ab394;
+  }
+
+
+  /* ubdate style */
+  .client-icon-img{
+    width: 70px;
+    height:70px;
+
+  }
+  .client-section .client-logo-image-container img {
+    width: 80px;
+    height: 50px;
+  }
+
+
+}
+

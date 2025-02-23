@@ -1,0 +1,82 @@
+@import url(../styles/homepage-style/footer.css);
+
+
+body {
+    background-color: #f8f9fa;
+}
+.contact-container {
+    max-width: 900px;
+    margin: 50px auto;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+.contact-container-wrapper{
+    height: fit-content;
+}
+.contact-info {
+   
+    background-image: linear-gradient(90deg, #1ab394, #1d364e) !important;
+    color: white;
+    padding: 40px;
+}
+.contact-info h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+.contact-info p {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+.contact-info i {
+    margin-right: 10px;
+}
+.contact-form {
+    padding: 40px;
+}
+.contact-form .btn {
+    background-image: linear-gradient(90deg, #1ab394, #1d364e) !important;
+    color: white;
+    border: none;
+    outline: none;
+}
+.contact-form .btn:hover {
+    background: green;
+}
+
+
+
+/* bread cramp section */
+.breadcrumb-section {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    background-color: rgb(181, 181, 194);
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+      url(../../assets/images/product-page-bg.jpg); */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+  }
+  
+  .breadcrumb-item a {
+    color: #fff;
+  }
+  
+  .breadcrumb-item.active {
+    color: #7cce94;
+  }
+  
+  .breadcrumb-item + .breadcrumb-item::before {
+    color: white;
+  }
+
+
+
+@media screen and (max-width:767px){
+    .contact-container-wrapper{
+        height: fit-content;
+    }
+}

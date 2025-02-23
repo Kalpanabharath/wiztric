@@ -1,0 +1,159 @@
+@import url('../../styles/homepage-style/footer.css');
+@import url('../../styles/homepage-style/team-section.css');
+
+.about-page-banner{
+    /* height: 70vh; */
+    /* height: fit-content; */
+    height: 90vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)),
+    url(../../assets/images/wiztric-tech-image.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 10px;
+  /* overflow-x: hidden; */
+    
+}
+.about-page-heading{
+    color: white;
+    font-size: clamp(20px, 3vw, 46px);
+    font-family: Figtree, sans-serif;
+    background: linear-gradient(90deg, #FF9933,#ffff, #138808);
+    -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 900;
+
+}
+.about-page-para{
+    width: 60%;
+    color: white;
+    font-family: Figtree, sans-serif;
+    font-size: clamp(16px, 2vw, 20px);
+
+}
+.count-container{
+    /* background-color: rgb(237, 242, 247); */
+    background-color: transparent;
+}
+.counter {
+    font-weight: 700;
+    color: white;
+}
+.count-name{
+    color: rgb(105, 105, 105);
+    font-weight: 500;
+    font-family: Figtree, sans-serif;
+}
+.nav-tabs .nav-link {
+    font-weight: bold;
+    color: #6c757d;
+}
+
+.mission-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: black !important;
+}
+.mission-text {
+    font-size: 16px;
+    color: #6c757d;
+}
+.mission-text>h2{
+    color: black;
+}
+.mission-text>p{
+    font-size: 18px;
+}
+.nav-tabs .nav-link {
+    border: none !important; /* Removes border */
+    outline: none !important; /* Removes focus outline */
+}
+
+.nav-tabs .nav-link:hover,
+.nav-tabs .nav-link:focus {
+    border: none !important; /* Ensures no border appears on hover */
+    outline: none !important;
+    box-shadow: none !important; /* Removes any box shadow */
+}
+.nav-tabs .nav-link.active{
+    background-color: transparent;
+    border-bottom:  2px solid green !important;
+}
+/* join team start */
+
+.join-team {
+    /* background-color: #1f2127;  */
+    background-image: linear-gradient(90deg, #1ab394, #1d364e) !important;
+    color: white;
+    padding: 40px 50px;
+    border-radius: 10px;
+    /* max-width: 900px; */
+    margin: auto;
+}
+.btn-primary {
+    background-color: #3b82f6;
+    border-color: #3b82f6;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 6px;
+}
+.btn-primary:hover {
+    background-color: #2563eb;
+    border-color: #2563eb;
+}
+.link-linkedin{
+    font-size: small;
+}
+/* join team  end */
+
+
+.count-container{
+    width: 30%;
+}
+.about-buttion{
+ background-color: #1d364e; ;
+}
+.about-buttion:hover{
+    background-color: #1d364e;
+}
+
+
+
+/* bread cramp */
+.breadcrumb-section {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    background-color: rgb(181, 181, 194);
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+      url(../../assets/images/product-page-bg.jpg); */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+  }
+  
+  .breadcrumb-item a {
+    color: #fff;
+  }
+  
+  .breadcrumb-item.active {
+    color: #ffff;
+  }
+  
+  .breadcrumb-item + .breadcrumb-item::before {
+    color: white;
+  }
+
+@media (max-width: 767px) {
+    .about-page-banner{
+        height: fit-content;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 70px;
+    }
+    .about-page-para{
+        width: 90%;
+    }
+}

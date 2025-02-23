@@ -1,0 +1,112 @@
+@import url('../homepage-style/hero-section.css');
+@import url('../../styles/homepage-style/who-we-are.css');
+@import url('../../styles/homepage-style/product.css');
+@import url('../../styles/homepage-style/team-section.css');
+@import url('../../styles/homepage-style/client-section.css');
+@import url('../../styles/homepage-style/footer.css');
+
+
+/* announcement bar start */
+.announcementbar-icon{
+  margin-right: 5px;
+  font-size: 20px;
+}
+.top-announcementbar-ul{
+  margin: 0;
+}
+.top-announcementbar-ul>li{
+ font-size: 15px;
+}
+/* announcement bar end */
+/* aos */
+[data-aos] {
+  /* opacity: 1 !important; */
+  visibility: visible !important;
+}
+
+/* Fade Right */
+[data-aos="fade-right"] {
+  transform: translateX(-100vw);
+  opacity: 0;
+}
+
+[data-aos="fade-right"].aos-animate {
+  transform: translateX(0);
+  opacity: 1;
+  transition: all 2s ease-out;
+}
+
+/* Fade Left */
+[data-aos="fade-left"] {
+  transform: translateX(100vw);
+  opacity: 0;
+}
+
+[data-aos="fade-left"].aos-animate {
+  transform: translateX(0);
+  opacity: 1;
+  transition: all 2s ease-out;
+}
+
+/* Fade Up */
+[data-aos="fade-up"] {
+  transform: translateY(100vh);
+  opacity: 0;
+}
+
+[data-aos="fade-up"].aos-animate {
+  transform: translateY(0);
+  opacity: 1;
+  transition: all 2s ease-out;
+}
+
+/* Fade Down */
+[data-aos="fade-down"] {
+  transform: translateY(-100vh);
+  opacity: 0;
+}
+
+[data-aos="fade-down"].aos-animate {
+  transform: translateY(0);
+  /* opacity: 1; */
+  transition: all 2s ease-out;
+}
+
+/* herosection h1 animation */
+.lePushReleaseFrom {
+  display: inline-block;
+  opacity: 0;
+  transform: scale(3);
+  transition: transform 0.5s, opacity 0.5s;
+}
+
+.text-center {
+  text-align: center;
+}
+.top-arrow {
+  position: fixed; 
+  bottom: 20px; 
+  right: 20px; 
+  background-color: #000; 
+  color: white;
+  padding: 10px; 
+  border-radius: 50%; 
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.top-arrow a{
+  color:white;
+}
+
+/* .vertical-line{
+  width: 20px ;
+  height: auto;
+  position: absolute;
+  left: 30%;
+ 
+} */
+
+
+
+

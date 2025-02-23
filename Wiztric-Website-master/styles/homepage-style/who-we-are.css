@@ -1,0 +1,204 @@
+@import url(../../styles/global.css);
+
+
+/*** who we are  start ***/
+.who-we-are {
+    background-color: var(--black);
+    z-index: 0;
+    /* height: 100vh; */
+  
+    font-family: Figtree, sans-serif;
+    overflow-x: hidden;
+  }
+  
+  .who-we-are-container {
+    padding: 0;
+    position: relative;
+    height: fit-content;
+  }
+  
+  .who-we-are-img {
+    width: 95%;
+    object-fit: cover;
+    object-position: center center;
+    opacity: 0.9;
+    /* filter: brightness(100%) contrast(100%) saturate(0%) blur(0px) hue-rotate(0deg); */
+    transition-duration: 1s;
+    border-radius: 14px;
+    background-size: cover;
+    height: 100%;
+    margin-left: 5%;
+  }
+  .head-linear{
+    background-image: linear-gradient(90deg,#1ab394, #1d364e) !important;
+    color: transparent;
+    text-transform: uppercase;
+    background-clip: text;
+    font-weight: 700;
+  }
+  
+  .who-we-are-img:hover {
+    filter: none;
+    opacity: 1;
+  }
+  
+  .who-we-are-list {
+    position: absolute;
+    z-index: 20;
+    bottom: -2%;
+    left: -2%;
+    overflow: visible;
+  }
+  
+  .fa-circle-check {
+    color: var(--dark-green);
+    background-color: black;
+  }
+  
+  .who-we-are-list li {
+    list-style: none;
+    padding: 10px;
+    /* color: var(--white-text); */
+    color: white;
+  }
+  
+  .centered-list {
+    list-style: none;
+    /* Remove bullet points */
+    padding: 0;
+    text-align: center;
+    /* Center align the text of <li> elements */
+    padding: 10px;
+    border-radius: 7px;
+    background-color: #1d364e;
+    color: white;
+    opacity: 0.9;
+    border-radius: 20px;
+    margin-left: 10px;
+  }
+  
+  .centered-list li {
+    display: flex;
+    align-items: center;
+    margin: 0.5rem;
+    padding: 10px;
+    border-bottom: 1px solid var(--background-dark);
+    width: 220px;
+    color: white;
+  }
+  
+  .centered-list li:last-child {
+    border-bottom: none !important;
+  }
+  
+  .centered-list li i {
+    margin-right: 20px;
+  }
+  
+  .who-we-are-para {
+    /* color: var(--light-green); */
+    color: green;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: Figtree, sans-serif;
+    width: 90%;
+  }
+  
+  .who-we-are-title {
+    color: var(--white-text);
+    width: 90%;
+  }
+  
+  .who-we-are-subpara {
+    width: 75%;
+    color: var(--background-dark);
+    font-family: Inter, sans-serif;
+    font-weight: 400;
+  }
+  
+  .who-we-are-text-hr {
+    width: 100%;
+    color: var(--background-dark);
+    height: 5px;
+    opacity: 1;
+  }
+  
+  .count {
+    color: var(--white-text);
+  }
+  
+  .count-name {
+    color: var(--background-dark);
+  }
+  
+  @media (max-width: 985px) {
+    .who-we-are {
+      height: auto;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .who-we-are {
+      height: auto !important;
+    }
+  
+    .who-we-are-img {
+      height: 400px;
+    }
+  
+    .who-we-are-list {
+      left: -1%;
+    }
+  
+    .who-we-are-list li {
+      padding: 5px;
+    }
+  
+    .centered-list li {
+      font-size: 15px;
+      margin: 0.2rem;
+      padding: 5px;
+      width: 250px;
+    }
+  
+    .who-we-are-subpara {
+      width: 100%;
+    }
+  
+    .who-we-are-text-hr {
+      width: 100%;
+    }
+    .flex-column-change{
+      flex-direction: column-reverse;
+      gap: 10px;
+    }
+    .swiper{
+      width: 80%;
+    }
+  }
+  
+  @media (max-width: 1327px) {
+    .who-we-are-list li {
+      padding: 5px;
+    }
+  
+    .centered-list li {
+      font-size: 15px;
+      margin: 0.2rem;
+      padding: 5px;
+      width: 220px;
+    }
+  }
+  
+  @media (min-width: 1754px) {
+    .who-we-are-title {
+      font-family: 1.5vw;
+    }
+  
+    .who-we-are-subpara {
+      font-size: 1.3vw;
+    }
+  }
+  
+  /*** who we are  end ***/
